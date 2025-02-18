@@ -12,8 +12,9 @@ import { RouterModule } from '@angular/router';
   template: `
     <main>
       <a [routerLink]="['/']">
-        <header class="brand-name">
+        <header id="top-bar" class="brand-name">
           <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+          <button class="primary" type="button" [routerLink]="['/details']">Registrarse</button >
         </header>
       </a>
       <section class="content">
