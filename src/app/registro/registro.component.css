@@ -1,7 +1,12 @@
-form div, form{
+form div, form, button{
     margin: 10px;
 }
 
 label {
     margin:0 5px;
+}
+
+button:disabled {
+    background-color: #a1a0c1;
+    cursor: not-allowed;
 }

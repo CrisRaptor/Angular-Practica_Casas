@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 import { HousingService } from '../housing.service';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housinglocation';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-home',
   imports: [
     CommonModule,
-    HousingLocationComponent
+    HousingLocationComponent,
+    RouterModule
   ],
   template: `
+  <div id="registro">
+    <a [routerLink]="['/registro']"><button class="primary" type="button">Registrarse</button ></a>
+  </div>
   <section>
     <form>
       <input type="text" placeholder="Filter by city" #filter>

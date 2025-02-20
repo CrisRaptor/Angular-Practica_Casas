@@ -23,6 +23,10 @@
     color: white;
     border-radius: 8px;
   }
+
+  #registro{
+    float: right;
+  }
   
   @media (min-width: 500px) and (max-width: 768px) {
     .results {

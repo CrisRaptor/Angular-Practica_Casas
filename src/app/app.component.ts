@@ -7,17 +7,16 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   imports: [
     HomeComponent,
-    RouterModule,
+    RouterModule
   ],
   template: `
     <main>
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/']" >
         <header id="top-bar" class="brand-name">
           <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
-          <button class="primary" type="button" [routerLink]="['/details']">Registrarse</button >
         </header>
       </a>
-      <section class="content">
+      <section id="content" class="content">
         <router-outlet></router-outlet>
       </section>
     </main>
