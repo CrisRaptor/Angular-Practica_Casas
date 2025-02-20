@@ -29,8 +29,6 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
         <input id="agree" type="checkbox" formControlName="agreeCheckbox">
         <label for="agree">Acepto las condiciones</label>
       </div>
-     
-      
       <button class="primary" type="submit" [disabled]="!registro.value.agreeCheckbox">Registrarse</button >
   </form>`
   ,
@@ -46,14 +44,11 @@ export class RegistroComponent {
   });
 
   registrar(){
-    if((this.registro.value.name ?? "").length < 8){
-
-    } else if ((this.registro.value.surname ?? "").length < 8) {
-
-    } else if (!(this.registro.value.agreeCheckbox ?? false)) {
-
-    } else {
-
-    }
+    this.registro.value.name ?? '';
+    this.registro.value.surname ?? '';
+    this.registro.value.age ?? '';
+    this.registro.value.email ?? '';
+    this.registro.value.agreeCheckbox ?? '';
+    console.log(this.registro.value);
   }
 }
